@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 :root {
@@ -12,8 +13,10 @@
     --text-gray: #64748b;
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-size-paragraphs: 18px;
+    --font-size-title: 36px;
     --card-radius: 16px;
     --border-bajo: 1px solid #e5e7eb;
+    --font-size-ourdesign: 14px;
 }
 
 header {
@@ -132,7 +135,8 @@ header {
 }
 
 #customers,
-#resources {
+#resources,
+#our-design {
     text-align: center;
     padding: 100px 80px;
     background-color: #fff;
@@ -142,7 +146,7 @@ header {
 
 /* Títulos */
 .titulo h2 {
-    font-size: 36px;
+    font-size: var(--font-size-title);
     color: #111827;
     font-weight: 500;
     margin-bottom: 10px;
@@ -203,6 +207,64 @@ header {
     margin-bottom: 12px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
 }
+
+#our-design {
+    background-color: var(--footer-color);
+    font-size: var(--font-size-ourdesign);
+    color: var(--text-gray);
+    padding: 100px 80px;
+}
+
+#our-design .titulo {
+    margin-bottom: 60px;
+}
+
+.card-aproach {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-description-aproach {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: var(--card-radius);
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-description-aproach img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.card-description-aproach div {
+    flex: 1;
+}
+
+.card-description-aproach h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.card-description-aproach p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-gray);
+}
+
+
+
+
 
 /* Resources */
 #content-resources {
