@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
 }
 
 :root {
@@ -33,7 +32,6 @@
 }
 
 .btn-gradient {
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     color: white;
     border: none;
     border-radius: 8px;
@@ -41,7 +39,12 @@
     cursor: pointer;
     transition: transform var(--transition-default);
 }
-
+.bg-btn-gradient{
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+.bg-btn-start{
+    background: #3D63EA;
+}
 header {
     display: flex;
     align-items: center;
@@ -117,13 +120,13 @@ header {
 }
 
 #texto h1 {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 700;
     color: var(--text-dark);
     margin-top: 10px;
 }
 
-#texto h1 span {
+.color-secondary {
     color: var(--secondary-color);
 }
 
@@ -206,7 +209,9 @@ header {
     width: 190px;
     padding: 25px 10px;
 }
-
+.opacity{
+    opacity: 0.35;
+}
 .card img {
     width: 90px;
     height: 90px;
